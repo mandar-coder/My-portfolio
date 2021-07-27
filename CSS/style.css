@@ -14,8 +14,7 @@ header{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 .container{
-    max-width:1152px;
-    padding: 0 15px;
+    padding: 0 0;
     margin: 0 0;
 }
 .headd .container{
@@ -73,7 +72,7 @@ header nav .brand{
     background-color:white;
 }
 .hero{
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 .hero .left img{
     width: 400px;
@@ -276,6 +275,72 @@ footer{
 .thanks{
     padding: 1rem 0;
 }
+.headd .container{
+    margin-left: 0rem;
+}
+.hero{
+    flex-direction: column;
+}
+.hero .left img {
+    width: 360px;
+}
+header{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.hero .right{
+    position: absolute;
+    top: 125px;
+    padding: 0 1rem;
+    height: 10rem;
+    margin-left: 1rem;
+}
+.about-inner-wrap{
+    flex-direction: column;
+}
+.about .right {
+    text-align: center;
+    margin: 2rem -3rem;
+    
+    
+}
+.about .right .social{
+    display: none;
+}
+.skill .section-head {
+    margin: 2.5rem -3rem ;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding:1.5rem 1rem ;
+}
+section .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 4rem;
+}
+section.blog .blog-wrapper {
+    text-align: center;
+    padding: 2rem 1rem;
+    
+}
+section.contact .input-wrap-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+header #main-nav{
+    display: none;
+}
+section.contact{
+    background-color:rgb(231, 223, 223);
+    margin-top: 3rem;
+    padding: 2rem;
+}
+section.skill .card img {
+    position: absolute;
+    top: -3rem;
+    left: 43%;
+}
 /* this is mobile nav */
 /* .site-main-wrapper{
     position: relative;
@@ -305,38 +370,26 @@ footer{
     header #main-nav{
         display: none;
     }
+    .hero .right h1 {
+        font-size: 4rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: -2rem;
+    }
+    section.skill .card img {
+        position: absolute;
+        top: -3rem;
+        left: 48%;
+    }
 
-}
-
-@media (min-width: 576px) {
-    .container{
-        max-width: 540px;
-    }
-}
-@media (min-width: 768px) {
-    .container{
-        max-width: 720px;
-    }
-}
-@media (min-width: 992px) {
-    .container{
-        max-width: 960px;
-    }
-}
-@media (min-width: 1200px) {
-    .container{
-        max-width: 1152px;
-    }
 }
 @media (max-width: 576px) {
     /* max and min width is main here  */
     /* mobile */
 
-    .container{
-        max-width:540px;
-    }
+
     .headd .container{
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
     .hero{
         flex-direction: column;
@@ -396,58 +449,10 @@ footer{
         margin-top: 3rem;
         padding: 2rem;
     }
+    section.skill .card img {
+        position: absolute;
+        top: -3rem;
+        left: 48%;
+    }
 }
-    
 
-/* @media (max-width: 768px) { */
-    /* this is for tablet */
-    /* .container{
-        max-width: 720px;
-    }
-    header {
-        background-color: rgb(17, 16, 16);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 93%, 0 100%);
-    }
-    .hero{
-        flex-direction: column;
-    }
-    .hero .right {
-        color: white;
-        margin: 1rem 1rem;
-        padding-right: 1rem;
-    }
-    section .about-img {
-        height: 400px;
-        margin-left: -3rem;
-    }
-    section.skill {
-        background-color: lightgray;
-        padding: 4rem 5rem;
-        margin-left: -3rem;
-    }
-    section.blog .blog-wrapper {
-        padding: 2rem 6rem;
-        margin-left:-2rem;
-    }
-    .blog .section-head{
-        margin-left: -2rem;
-    }
-    section.contact .card-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 2rem;
-        margin-left: 6rem;
-    }
-    .contact .input-wrap{
-        margin-right: 4rem;
-    }
-    .contact .section-head{
-        margin-left: -4rem;
-    }
-    .about .container {
-        max-width: 1152px;
-        padding: 0 15px;
-        margin: 0 0;
-    }
-    
-} */
